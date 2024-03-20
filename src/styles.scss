@@ -1,1 +1,30 @@
-/* You can add global styles to this file, and also import other style files */
+// @import "~normalize.css";
+@import "assets/styles/main.scss";
+
+body {
+  background-color: #f0ebe1;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0;
+  padding-left: 16px;
+  padding-right: 16px;
+
+  @include sm {
+    width: 768px;
+  }
+
+  @include md {
+    width: 1024px;
+  }
+
+  @include lg {
+    width: 1280px;
+  }
+
+  @include xl {
+    width: 1440px;
+  }
+}
