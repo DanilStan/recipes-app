@@ -1,1 +1,57 @@
+@import "assets/styles/_variables.scss";
 
+.header {
+  padding: 16px 0;
+}
+
+.header__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 16px 24px;
+  border-radius: 32px;
+  border: 1px solid rgba(38, 37, 34, 0.24);
+}
+
+.header__logo {
+  display: flex;
+  align-items: center;
+
+  &:visited {
+    color: transparent;
+  }
+}
+
+.header__logo-text {
+  margin-left: 8px;
+  max-width: 50px;
+
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 100%; /* 15px */
+}
+
+.header-nav {
+  display: flex;
+
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 100%; /* 14px */
+  text-transform: uppercase;
+  color: #9f9c95;
+
+  &__link {
+    padding: 8px;
+
+    &:hover {
+      color: $blackColor;
+    }
+
+    &:visited {
+      color: #9f9c95;
+    }
+  }
+}
