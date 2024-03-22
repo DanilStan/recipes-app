@@ -1,8 +1,9 @@
-// @import "~normalize.css";
 @import "assets/styles/main.scss";
 
 body {
+  font-family: Roboto, sans-serif;
   background-color: #f0ebe1;
+  color: $blackColor;
 }
 
 .container {

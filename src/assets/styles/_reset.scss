@@ -38,13 +38,13 @@ ol[class] {
   list-style: none;
 }
 
-a:not([class]) {
-  text-decoration-skip-ink: auto;
-}
-
 img {
   max-width: 100%;
   display: block;
+}
+
+a {
+  text-decoration: none;
 }
 
 article > * + * {
