@@ -10,8 +10,8 @@ body {
   margin-left: auto;
   margin-right: auto;
   padding: 0;
-  padding-left: 16px;
-  padding-right: 16px;
+  padding-left: 64px;
+  padding-right: 64px;
 
   @include sm {
     width: 768px;
