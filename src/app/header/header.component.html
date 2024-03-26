@@ -4,14 +4,14 @@
       <a href="/" class="header__logo">
         <img
           class="header__logo-img"
-          src="assets/images/icons/Logo.svg"
+          src="assets/images/icons/logo.svg"
           alt="Site logo Site"
         />
         <p class="header__logo-text">Cooks Delight</p>
       </a>
       <ul class="header-nav">
         <li class="header-nav__item">
-          <a class="header-nav__link" href="/">Home</a>
+          <a class="header-nav__link active__link" href="/">Home</a>
         </li>
         <li class="header-nav__item">
           <a class="header-nav__link" href="/">Recipes</a>
@@ -23,8 +23,31 @@
           <a class="header-nav__link" href="/">About us</a>
         </li>
       </ul>
-      <div>
-        <a href="">Subscribe</a>
+      <div class="header-info">
+        <form
+          [ngClass]="toggleSearchBtn ? 'visible' : 'hidden'"
+          (ngSubmit)="onSubmit()"
+          [formGroup]="form"
+        >
+          <input
+            class="header-info__input"
+            type="text"
+            placeholder="Find your recipe"
+            formControlName="search"
+          />
+          <button class="header-info__btn" type="submit">
+            <img src="assets/images/icons/search-icon.svg" alt="Search" />
+          </button>
+        </form>
+        <button
+          class="header-info__btn submit-btn"
+          type="button"
+          (click)="toggleSearchBtn = !toggleSearchBtn"
+          [ngClass]="toggleSearchBtn ? 'hidden' : 'visible'"
+        >
+          <img src="assets/images/icons/search-icon.svg" alt="Search" />
+        </button>
+        <a href="" class="header-info__subscribe">Subscribe</a>
       </div>
     </div>
   </div>

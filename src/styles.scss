@@ -2,6 +2,9 @@
 
 body {
   font-family: Roboto, sans-serif;
+  font-style: normal;
+  line-height: 100%;
+  font-weight: 500;
   background-color: #f0ebe1;
   color: $blackColor;
 }
@@ -14,18 +17,18 @@ body {
   padding-right: 64px;
 
   @include sm {
-    width: 768px;
+    // width: 768px;
   }
 
   @include md {
-    width: 1024px;
+    // width: 1024px;
   }
 
   @include lg {
-    width: 1280px;
+    // width: 1280px;
   }
 
   @include xl {
-    width: 1440px;
+    // width: 1440px;
   }
 }
