@@ -1,0 +1,135 @@
+@import "assets/styles/_variables.scss";
+
+.footer {
+  padding: 16px 0;
+}
+
+.footer__box {
+  padding: 27.5px 40px;
+
+  border-radius: 32px;
+  background-color: $blackColor;
+}
+
+.footer-logo {
+  display: flex;
+  align-items: center;
+  position: relative;
+
+  &__basic-img {
+    position: absolute;
+    transition: all 0.15s linear;
+  }
+
+  &__hover-img {
+    position: absolute;
+    opacity: 0;
+    transition: all 0.15s linear;
+  }
+
+  &__text {
+    max-width: 50px;
+    margin-left: 48px;
+
+    color: $whiteColor;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 103%; /* 14.42px */
+    transition: all 0.15s linear;
+  }
+
+  &:hover {
+    .footer-logo__basic-img {
+      opacity: 0;
+    }
+
+    .footer-logo__hover-img {
+      opacity: 1;
+    }
+
+    .footer-logo__text {
+      color: $orangeAccentColor;
+      font-weight: 700;
+    }
+  }
+}
+
+.footer__nav {
+  display: flex;
+  color: $whiteColor;
+
+  &-item {
+    padding: 0px 16px;
+    border-right: 1px solid rgba(240, 235, 225, 0.08);
+
+    &:first-child {
+      padding-left: 0;
+    }
+
+    &:last-child {
+      padding-right: 0;
+    }
+  }
+
+  &-link {
+    font-size: 14px;
+    line-height: 100%;
+    text-transform: uppercase;
+    transition: all 0.15s linear;
+    &:hover {
+      color: $orangeAccentColor;
+      font-size: 12px;
+    }
+  }
+}
+
+.footer__social-media {
+  display: flex;
+  align-items: center;
+
+  &-link {
+    display: flex;
+    &:hover {
+      .footer__social-media-svg {
+        fill: $orangeAccentColor;
+        scale: 1.3;
+      }
+    }
+  }
+
+  &-item {
+    margin-right: 16px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &-svg {
+    width: 24px;
+    height: 24px;
+
+    transition: all 0.15s linear;
+    fill: $whiteColor;
+  }
+}
+
+.footer__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 27.5px;
+
+  border-bottom: 1px solid rgba(240, 235, 225, 0.08);
+}
+
+.footer__copyright {
+  margin-top: 15px;
+  text-align: center;
+
+  font-size: 12px;
+  line-height: 120%; /* 14.4px */
+  letter-spacing: 0.12px;
+  text-transform: uppercase;
+  color: rgba(240, 235, 225, 0.6);
+}
