@@ -17,9 +17,10 @@
 .header__logo {
   display: flex;
   align-items: center;
-  transition: all 0.25s linear;
+  transition: all 0.15s linear;
   &:hover {
     opacity: 0.7;
+    scale: (1.02);
   }
 }
 
@@ -78,6 +79,7 @@
 
     &:hover {
       opacity: 0.7;
+      scale: (1.02);
     }
   }
 }
@@ -93,6 +95,7 @@
 
   &:hover {
     background-color: #fff;
+    scale: (1.02);
   }
 }
 
