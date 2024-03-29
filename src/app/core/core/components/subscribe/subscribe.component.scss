@@ -1,0 +1,129 @@
+@import "assets/styles/_variables.scss";
+
+.subscribe {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 64px 0;
+  width: 100%;
+  aspect-ratio: 1312/486;
+
+  text-align: center;
+  background-image: url("https://firebasestorage.googleapis.com/v0/b/angular-ad7e4.appspot.com/o/subscribe.png?alt=media&token=89dd51ae-f9b6-4fc0-9d27-bf984523096a");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  color: $whiteColor;
+}
+
+@media (min-device-pixel-ratio: 2),
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .subscribe {
+    background-image: url("https://firebasestorage.googleapis.com/v0/b/angular-ad7e4.appspot.com/o/subscribe%402x.png?alt=media&token=eb531866-ebde-4edb-b169-3659ca5de66f@2x.png");
+  }
+}
+
+.subscribe__sub-title {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 100%; /* 18px */
+  text-transform: uppercase;
+}
+
+.subscribe__title {
+  margin: 12px auto;
+  max-width: 876px;
+
+  font-family: Montserrat;
+  font-size: 80px;
+  font-weight: 800;
+  line-height: 100%; /* 80px */
+  letter-spacing: -0.8px;
+  text-transform: uppercase;
+  color: #fffbf2;
+}
+
+.subscribe__text {
+  margin: 0 auto;
+  max-width: 648px;
+  font-size: 21px;
+  font-weight: 400;
+  line-height: 140%; /* 29.4px */
+  letter-spacing: 0.21px;
+}
+
+.subscribe__form {
+  display: flex;
+  justify-content: center;
+  margin-top: 48px;
+  transition: all 0.15s linear;
+
+  &-box {
+    display: flex;
+    align-items: center;
+
+    border-radius: 24px;
+    background-color: #fffbf2;
+    transition: all 0.15s linear;
+
+    &:focus-within {
+      scale: 1.04;
+
+      .subscribe__form-btn {
+        height: 100%;
+        margin: 0;
+      }
+    }
+
+    &:hover {
+      scale: 1.04;
+      .subscribe__form-input::placeholder {
+        color: $blackColor;
+      }
+
+      .subscribe__form-btn {
+        height: 100%;
+        margin: 0;
+      }
+    }
+  }
+}
+
+.subscribe__form-input {
+  padding: 12px 24px 12px 24px;
+
+  border-radius: 24px 0px 0px 24px;
+  border: none;
+  color: $blackColor;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px; /* 114.286% */
+  letter-spacing: 0.21px;
+  outline: none;
+  transition: all 0.15s linear;
+
+  &::placeholder {
+    font-size: 18px;
+  }
+}
+
+.subscribe__form-btn {
+  padding: 12px 24px;
+  margin-right: 7px;
+
+  font-size: 14px;
+  line-height: 100%; /* 14px */
+
+  background-color: $blackColor;
+  color: #fffbf2;
+  border: none;
+  border-radius: 24px;
+  text-transform: uppercase;
+  transition: all 0.25s linear;
+  opacity: 0.7;
+
+  &:hover {
+    opacity: 1;
+  }
+}
