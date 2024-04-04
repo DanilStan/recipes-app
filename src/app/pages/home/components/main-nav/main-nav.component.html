@@ -1,0 +1,21 @@
+<section class="main-nav">
+  <div class="container">
+    <div class="main-nav__box">
+      <div class="main-nav__info">
+        <p class="main-nav__mark">explore</p>
+        <h2 class="main-nav__title">Our diverse Palette</h2>
+        <p class="main-nav__text">
+          If you are a breakfast enthusiast, a connoisseur of savory delights,
+          or on the lookout for irresistible desserts, our curated selection has
+          something to satisfy every palate.
+        </p>
+        <a class="main-nav__btn" href="/">See more</a>
+      </div>
+      <ul class="main-nav__list">
+        @for(item of navData; track item.id) {
+        <app-filter-list [itemData]="item"></app-filter-list>
+        }
+      </ul>
+    </div>
+  </div>
+</section>
