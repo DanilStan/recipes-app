@@ -1,0 +1,72 @@
+@import "assets/styles/_variables.scss";
+
+.main-nav__box {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 40px;
+  background-color: $blueAccentColor;
+  border-radius: 32px;
+}
+
+.main-nav__info {
+  max-width: 494px;
+}
+
+.main-nav__mark {
+  display: inline-block;
+  padding: 4px 8px;
+  margin-bottom: 16px;
+
+  border-radius: 12px;
+  background-color: $orangeAccentColor;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: $whiteColor;
+}
+
+.main-nav__title {
+  margin-bottom: 12px;
+
+  font-family: Montserrat;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 100%; /* 40px */
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+}
+
+.main-nav__text {
+  margin-bottom: 40px;
+
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 140%; /* 22.4px */
+  letter-spacing: 0.16px;
+  color: rgba(38, 37, 34, 0.8);
+}
+
+.main-nav__btn {
+  display: inline-block;
+  padding: 12px 24px;
+
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 100%; /* 14px */
+  text-transform: uppercase;
+  border-radius: 24px;
+  border: 1px solid $blackColor;
+  color: $blackColor;
+  transition: all 0.15s linear;
+
+  &:hover {
+    background-color: $blackColor;
+    color: $whiteColor;
+    scale: 1.02;
+  }
+}
+
+.main-nav__list {
+  text-decoration: none;
+}
